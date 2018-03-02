@@ -7,6 +7,7 @@ preference to the shorter timescale.
 
 4. Business people and developers must work 
 together daily throughout the project.
+    Ira
 
 5. Build projects around motivated individuals. 
 Give them the environment and support they need, 
