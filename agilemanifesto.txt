@@ -6,6 +6,11 @@ Agile processes harness change for the customer's competitive advantage.
 couple of weeks to a couple of months, with a 
 preference to the shorter timescale.
 (Nazar)
+Передача робочого програмного забезпечення часто, від a
+пару тижнів до пари місяців, з a
+перевага на коротший термін.
+(Назар)
+
 
 4. Business people and developers must work 
 together daily throughout the project.
