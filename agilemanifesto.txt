@@ -1,6 +1,9 @@
 2. Welcome changing requirements, even late in development.
 Agile processes harness change for the customer's competitive advantage.
 (Anastasia)
+2. Схвальне ставлення до змін, навіть на заключних стадіях розробки. 
+Agile-процеси надають можливість використовувати зміни 
+задля забезпечення конкурентоспроможності замовника.
 
 3.Deliver working software frequently, from a 
 couple of weeks to a couple of months, with a 
