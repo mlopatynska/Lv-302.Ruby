@@ -27,4 +27,7 @@ Petro
 8. Agile processes promote sustainable development. 
 The sponsors, developers, and users should be able 
 to maintain a constant pace indefinitely.(Sasha Muliar)
+Інвестори, розробники і користувачі повинні мати можливість підтримувати 
+постійний ритм як завгодно довго. Agile допомагає 
+налагодити такий сталий процес розробки.
 
