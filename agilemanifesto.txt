@@ -11,6 +11,7 @@ together daily throughout the project.
 5. Build projects around motivated individuals. 
 Give them the environment and support they need, 
 and trust them to get the job done.
+(Misha)
 
 6. The most efficient and effective method of
 conveying information to and within a development
