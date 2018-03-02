@@ -1,4 +1,5 @@
-2. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+2. Welcome changing requirements, even late in development.
+Agile processes harness change for the customer's competitive advantage.
 
 3.Deliver working software frequently, from a 
 couple of weeks to a couple of months, with a 
@@ -11,7 +12,7 @@ together daily throughout the project.
 Give them the environment and support they need, 
 and trust them to get the job done.
 
-6)The most efficient and effective method of
+6.The most efficient and effective method of
 conveying information to and within a development
 team is face-to-face conversation.
 
@@ -21,7 +22,7 @@ team is face-to-face conversation.
 
 7. Working software is the primary measure of progress. 
 
-8.Principal                                                   6)The most efficient and effective method of
+8.Principal                                                    
 conveying information to and within a development
 team is face-to-face conversation.
 
