@@ -1,5 +1,12 @@
 2. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
 
+4. Business people and developers must work 
+together daily throughout the project.
+
+5. Build projects around motivated individuals. 
+Give them the environment and support they need, 
+and trust them to get the job done.
+
 7. Working software is the primary measure of progress. 
 
 8.Principal
@@ -8,13 +15,4 @@ Agile processes promote sustainable development.
 The sponsors, developers, and users should be able 
 to maintain a constant pace indefinitely.
 
-
-4) Build projects around motivated individuals.
-Give them the environment and support they need,
-and trust them to get the job done.
-
-
-4) Build projects around motivated individuals.
-Give them the environment and support they need,
-and trust them to get the job done.
 
