@@ -1,4 +1,6 @@
 3.Deliver working software frequently, from a 
 couple of weeks to a couple of months, with a 
 preference to the shorter timescale.
+7. Working software is the primary measure of progress. 
+8.Principal
 
