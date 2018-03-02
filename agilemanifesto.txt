@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 7. Working software is the primary measure of progress. 
+=======
+8.Principal
+>>>>>>> 198bc8015d8693182c06461e777cea112b173315
