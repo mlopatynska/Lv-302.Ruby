@@ -21,7 +21,10 @@ team is face-to-face conversation.
 
 7. Working software is the primary measure of progress. 
 
-8.Principal
+8.Principal                                                   6)The most efficient and effective method of
+conveying information to and within a development
+team is face-to-face conversation.
 
-
-
+Agile processes promote sustainable development. 
+The sponsors, developers, and users should be able 
+to maintain a constant pace indefinitely.
