@@ -11,17 +11,12 @@ together daily throughout the project.
 5. Build projects around motivated individuals. 
 Give them the environment and support they need, 
 and trust them to get the job done.
+(Misha)
 
 6. The most efficient and effective method of
 conveying information to and within a development
 team is face-to-face conversation.
-<<<<<<< HEAD
-=======
 Petro
-
-7. Working software is the primary measure of progress. 
-8.Principal
->>>>>>> Petro
 
 7. Working software is the primary measure of progress. 
 
