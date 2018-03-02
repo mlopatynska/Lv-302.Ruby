@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+7. Working software is the primary measure of progress. 
+=======
 8.Principal
+<<<<<<< HEAD
 4) Build projects around motivated individuals.
 Give them the environment and support they need,
 and trust them to get the job done.
+=======
+>>>>>>> 198bc8015d8693182c06461e777cea112b173315
+>>>>>>> 17b41ee444937f13330ff96746ce8224f2e864c2
