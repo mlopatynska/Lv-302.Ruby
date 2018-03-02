@@ -21,7 +21,7 @@ conveying information to and within a development
 team is face-to-face conversation.
 Petro
 
-7. Working software is the primary measure of progress. 
+7. Робоче програмне забезпечення є основною мірою прогресу.
 (Vitalii Chverenko)
 
 8. Agile processes promote sustainable development. 
