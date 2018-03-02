@@ -2,11 +2,14 @@
 7. Working software is the primary measure of progress. 
 
 8.Principal
-
-
 Agile processes promote sustainable development. 
 The sponsors, developers, and users should be able 
 to maintain a constant pace indefinitely.
+
+
+4) Build projects around motivated individuals.
+Give them the environment and support they need,
+and trust them to get the job done.
 
 
 4) Build projects around motivated individuals.
