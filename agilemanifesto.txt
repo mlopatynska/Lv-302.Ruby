@@ -17,7 +17,7 @@ conveying information to and within a development
 team is face-to-face conversation.
 
 7. Working software is the primary measure of progress. 
-
+Vitalii
 8. Agile processes promote sustainable development. 
 The sponsors, developers, and users should be able 
 to maintain a constant pace indefinitely.
