@@ -1,6 +1,6 @@
 1. Our highest priority is to satisfy the customer
 through early and continuous delivery
-of valuable software. 
+of valuable software.
 (Maryan)
 
 2. Welcome changing requirements, even late in development.
