@@ -1,6 +1,10 @@
 1. Our highest priority is to satisfy the customer
 through early and continuous delivery
 of valuable software. 
+(Maryan)
+Найвищим пріоритетом для нас є задоволення потреб замовника,
+шляхом завчасного та регулярного постачання
+програмного забезпечення. 
 (Мар'ян)
 
 2. Welcome changing requirements, even late in development.
