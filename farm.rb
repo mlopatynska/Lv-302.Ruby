@@ -96,7 +96,6 @@ class Woman < People
 	end
 end
 
-
 # minerva = Owl.new
 # oligostrix = Owl.new
 # minerva.dead
