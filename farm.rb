@@ -1,35 +1,37 @@
 class Farm 
+
 	@@count = 0
+
 	def initialize
 		@@count += 1
 		puts "Being class created"
 	end
 
 	def show_count
-        "There are #{@@count} beings"
-    end
+    "There are #{@@count} beings"
+  end
 
 	attr_accessor :name, :age, :game_staff 
     
-    def identify
-        "Hello, my name is #{@name} and i'm #{@age} years old!"
-    end
+  def identify
+    "Hello, my name is #{@name} and i'm #{@age} years old!"
+  end
 
-    def eat
-    	"Every single being would like to eat a lot of meet, especially"
-    end
+  def eat
+  	"Every single being would like to eat a lot of meet, especially"
+  end
 
-    def personality
-    	"#{@name} like to play #{@game_staff}"
-    end
+  def personality
+  	"#{@name} like to play #{@game_staff}"
+  end
 
-    def dest 
-    	@@count -= 1	
-    end
+  def dest 
+  	@@count -= 1	
+  end
 
-    def +(comb_names)
-    	self.name.to_s + comb_names.name.to_s	
-    end
+  def +(comb_names)
+  	self.name.to_s + comb_names.name.to_s	
+  end
 end
 
 
@@ -44,16 +46,15 @@ end
 
 class Man < People
 	def personality
-	people_game = super
-    	"Humans have a passion to play games. #{people_game}"
+	  people_game = super
+    "Humans have a passion to play games. #{people_game}"
   end
 end
 
 class Woman < People
-	
 	def personality
 		people_game = super
-    	"#{@name} like to play with #{people_game}"
+    "#{@name} like to play with #{people_game}"
   end
 end
 
@@ -69,14 +70,14 @@ end
 class Camel < Animal
 	def personality
 		animal_game = super
-    	"#{@name} like to play with #{animal_game}"
+    "#{@name} like to play with #{animal_game}"
   end
 end
 
 class Wolf < Animal
 	def personality
 		animal_game = super
-    	"#{@name} like to play with #{animal_game}"
+    "#{@name} like to play with #{animal_game}"
   end
 end
 
