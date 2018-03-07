@@ -1,116 +1,131 @@
-	class Creature
-		@@count = 0
-		
-		def self.count
-			@@count
-		end
-		attr_reader :name, :type
-		def initialize(name)
-			@name = name
-			@type = self.class
-			@@count+=1
-		end
+class Creature
+  @@count = 0
 
-		def who_am_I
-			"I'm: #{@name}, #{@type}"
-		end
+  def self.count
+    @@count
+  end
+  
+  attr_reader :name, :type
+  
+  def initialize(name)
+    @name = name
+    @type = self.class
+    @@count += 1
+  end
 
-		def born
-			"#{who_am_I}, is born"
-		end
-		
-		def eat
-			"#{who_am_I}, eating"
-		end
+  def finalize()
+    @@count -= 1
+  end
 
-		def +(any)
-			self.type.to_s + any.type.to_s
-		end
-	end
+  def who_am_I
+    "I'm: #{@name}, #{@type}"
+  end
 
-	class Animal < Creature
-		def suck_milk
-			puts "I'm, #{self.name} #{self.type} sucking milk"
-		end
+  def born
+    "#{who_am_I}, is born"
+  end
 
-		def voice; end 
-	end
+  def eat
+    "#{who_am_I}, eating"
+  end
 
-	class Fish < Creature
-		def swim
-			puts "I'm, #{self.name} #{self.type} swiming"
-		end
-	end
+  def +(other)
+    type.to_s + any.type.to_s
+  end
+end
 
-	class People < Creature
-		def watch
-			puts "I'm, #{self.name} #{self.type} wathcing"
-		end
+class Animal < Creature
+  def suck_milk
+    puts "I'm, #{name} #{type} sucking milk"
+  end
 
-		def hunt; end
-	end
+  def voice; end 
+end
 
-	class Bird < Creature
-		def sing
-			puts "I'm, #{self.name} #{self.type}, I'm singing"
-		end
-		def fly
-			puts "I'm, #{self.name} #{self.type}, I'm flying"
-		end
-	end
+class Fish < Creature
+  def swim
+    puts "I'm, #{name} #{type} swiming"
+  end
+end
 
-	class Eagle < Bird
-		def sing
-			puts "I'm, #{self.name} #{self.type}, I can't sing"
-		end
+class People < Creature
+  def watch
+    puts "I'm, #{name} #{type} wathcing"
+  end
 
-		def hunt
-			puts "I'm, #{self.name} #{self.type}, I'm hunting"
-		end
-	end
+  def hunt; end
+end
 
-	class Parrot < Bird
-	end
+class Bird < Creature
+  
+  def sing
+    puts "I'm, #{name} #{type}, I'm singing"
+  end
+    
+  def fly
+    puts "I'm, #{name} #{type}, I'm flying"
+  end
+end
 
-	class Sharp < Fish
-	end
+class Eagle < Bird
+  def sing
+    puts "I'm, #{name} #{type}, I can't sing"
+  end
 
-	class Salmon < Fish
-	end
+  def hunt
+    puts "I'm, #{name} #{type}, I'm hunting"
+  end
+end
 
-	class Dog < Animal
-		def voice
-			puts "I'm, #{self.name} #{self.type}, my voice 'gav gav'"
-		end
-	end
+class Parrot < Bird
+end
 
-	class Cat < Animal
-		def voice
-			puts "I'm, #{self.name} #{self.type}, my voice 'meaw meaw'"
-		end
-	end
+class Sharp < Fish
+end
 
-	class BlackMan < People
-		def hunt(something)
-			puts "I'm, #{self.name} #{self.type}, I've hunted #{something.class}"
-		end
-	end
+class Salmon < Fish
+end
 
-	class WhiteMan < People
-		def hunt(something)
-			puts "I'm, #{self.name} #{self.type}, I've not hunted #{something.class}, I can just trolling BlackMan"
-		end
-	end
+class Dog < Animal
 
-	Creatures = [Parrot.new("PePe"), Eagle.new("Best eagle"),WhiteMan.new("brad pitt"), BlackMan.new("50cent")]
-	Creatures.each do |elem| puts 	elem.who_am_I,
-							  		elem.eat,
-							  		elem.born
-							  		elem.hunt
-				   end  
+  def voice
+    puts "I'm, #{name} #{type}, my voice 'gav gav'"
+  end
+end
 
-	puts Cat.new("barsik") + Cat.new('barbos')
+class Cat < Animal
+  def voice
+    puts "I'm, #{name} #{type}, my voice 'meaw meaw'"
+  end
+end
 
-	puts Creature.count
-	
+class BlackMan < People
+  def hunt(something)
+    puts "I'm, #{name} #{type}, I've hunted #{something.class}"
+  end
+end
 
+class WhiteMan < People
+  def hunt(something)
+    puts "I'm, #{name} #{type}, I've not hunted #{something.class},
+     I can just trolling BlackMan"
+  end
+end
+
+creatures = [Parrot.new('PePe'), Eagle.new('Best eagle'),
+             WhiteMan.new('brad pitt'), BlackMan.new('50cent')]
+creatures.each { |elem| puts elem.who_am_I, elem.eat, elem.born }
+
+puts Cat.new('barsik') + Cat.new('barbos')
+
+puts Creature.count
+a = Dog.new('barbos')
+puts Creature.count
+a.finalize
+puts Creature.count
+
+man = BlackMan.new('nigga')
+man.hunt(a)
+
+man1 = WhiteMan.new('misha')
+man1.hunt(Cat.new('kitty'))
