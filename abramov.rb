@@ -19,5 +19,4 @@ def square?(n)
   str2 = (n**2).to_s
   str2.end_with?(str) ? true : false
 end
-
 end
