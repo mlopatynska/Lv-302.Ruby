@@ -1,8 +1,8 @@
-module Functions
-	
+
 def natural?(n)
   n.is_a?(Integer) && n > 0 ? true : false
 end
+
 def is_simple?(n)
    (2...n).all? {|num| n % num != 0 } ? true : false
 end
