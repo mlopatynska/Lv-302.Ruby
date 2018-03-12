@@ -10,8 +10,8 @@ end
 def is_divider?(n)
   arr = (1..n).inject([]) do |i, x|
     (n % x).zero? ? i << x : i
-	end
-	arr
+  end
+  arr
 end
 
 def square?(n)
