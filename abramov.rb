@@ -1,19 +1,14 @@
 # abramov tasks
 module Abramov
   def task_178_b(num1, num2)
-    check_data(num1)
-    check_data(num2)
     (num1..num2).select { |number| (number % 3).zero? && number % 5 != 0 }.count
   end
 
   def task_178_v(num1, num2)
-    check_data(num1)
-    check_data(num2)
     (num1..num2).select { |number| (Math.sqrt(number) % 2).zero? }.count
   end
 
   def task_554(num)
-    check_data(num)
     result = []
     (1..num).each do |a|
       (a.next..num).each do |b|
