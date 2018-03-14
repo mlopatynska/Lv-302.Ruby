@@ -24,7 +24,7 @@ module Abramov
   # натуральных чисел, что n = x^2 + y^2 + z^2.
   def task_331b(n)
     array = (1..n).to_a.repeated_combination(3).inject([]) do |arr, el|
-      el[0]**2 + el[1]**2 + el[2]**2 == n ? arr << el.to_s : arr
+      el[0]**2 + el[1]**2 + el[2]**2 == n ? arr << el : arr
     end
     array.count.zero? ? "It's impossible." : array
   end
