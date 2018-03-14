@@ -25,10 +25,9 @@ module Abramov
   # Если можно, то указать все тройки x, y, z таких
   # натуральных чисел, что n = x^2 + y^2 + z^2.
   def task_331b(n)
-    arr = []
-    (1..n).to_a.repeated_combination(3).each do |el|
-      arr << el.to_s if el[0]**2 + el[1]**2 + el[2]**2 == n
+    array = (1..n).to_a.repeated_combination(3).inject([]) do |arr, el|
+      el[0]**2 + el[1]**2 + el[2]**2 == n ? arr << el.to_s : arr
     end
-    arr.count.zero? ? "It's impossible." : arr
+    array.count.zero? ? "It's impossible." : array
   end
 end
