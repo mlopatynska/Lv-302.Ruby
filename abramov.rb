@@ -1,7 +1,7 @@
 # Abramov tasks
 module Abramov
   # 86. Дано натуральное число n: б) Чему равна сумма его цифр?
-  def sum_number(num)
+  def task_86b(num)
     num.to_s.split(//).inject(0) { |sum, x| sum + x.to_i }
   end
 
@@ -10,7 +10,7 @@ module Abramov
     (2..num).inject([]) { |dev, x| dev << x if (num % x).zero? dev }
   end
 
-  def deviders_p(sum, num)
+  def task_324(sum, num)
     q_deviders = deviders(num)
     p_deviders = deviders(sum)
     q_deviders
@@ -18,7 +18,7 @@ module Abramov
   end
 
 # 557. Дано натуральное число n (n ≥ 2). Найти все меньшие n простые числа, используя решето Эратосфена.
-  def abramov (n)
+  def task_557(n)
     (2..n).inject([]){ |result, number| ((2...number).map{ |x| number % x }).include?(0) ? result : result << number }
   end
 end
