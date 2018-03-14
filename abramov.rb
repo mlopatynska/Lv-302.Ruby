@@ -15,23 +15,7 @@ module Abramov
       .inject([]) { |dev, n| (p_deviders & deviders(n)) == [] ? dev << n : dev }
   end
 
-  def primes(num)
-    integers = []
-    i = 2
-    while i <= num
-      integers << i
-      i += 1
-    end
-    index = 0
-    multiplier = 2
-    until integers[index].nil?
-      while (integers[index] * multiplier) <= num
-        integers.delete(integers[index] * multiplier)
-        multiplier += 1
-      end
-      index += 1
-      multiplier = 2
-    end
-    p integers
+  def abramov (n)
+    (2..n).inject([]){ |result, number| ((2...number).map{ |x| number % x }).include?(0) ? result : result << number }
   end
 end
