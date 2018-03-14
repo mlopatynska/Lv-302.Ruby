@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'abramov'
+require './abramov'
 
 # MiniTest
 class TestAbramov < Minitest::Test
