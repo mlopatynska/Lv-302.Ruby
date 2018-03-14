@@ -20,9 +20,10 @@ module Abramov
 
   # 224. Дано натуральне число n. Дістати всі натуральні дільники.
   def task_224(n)
-    (2..n).inject([]) do |arr, a|
-      simple?(a) && natural?(a) ? arr << a : arr
+    arr = (1..n).inject([]) do |mas, a|
+      natural?(a) ? mas << a : mas
     end
+    arr & divider(n) 
   end
 
   # 325. Дано натуральне число n. Дістати всі прості дільники.
