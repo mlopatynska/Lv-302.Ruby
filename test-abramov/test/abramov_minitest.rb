@@ -3,9 +3,9 @@ require 'abramov'
 include Abramov
 
 class TestAbramov < Minitest::Test
-	def test_task_178_b
-		assert_equal(3, task_178_b(1, 10))
-	end
+  def test_task_178_b
+    assert_equal(3, task_178_b(1, 10))
+  end
 
   def test_task_178_v
     assert_equal(3, task_178_v(1, 36))
