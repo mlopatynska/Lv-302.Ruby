@@ -15,8 +15,7 @@ module Abramov
   end
 
   # 557. Дано натуральное число n (n ≥ 2). Найти все меньшие n простые числа, используя решето Эратосфена.
-  def task_557(n)
-    (2..n).inject([]){ |result, number| ((2...number).map{ |x| number % x }).include?(0) ? result : result << number }
+  def task_557(num)
+    (2..num).inject([]) { |result, number| ((2...number).map { |x| number % x }).include?(0) ? result : result << number }
   end
 end
-
