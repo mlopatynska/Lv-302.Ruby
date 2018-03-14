@@ -2,7 +2,7 @@
 module Abramov
   # Дано натуральное число n. Выяснить,
   # входить ли цифра 3 в запись числа n^2
-  def task_88_a(num)
+  def task_88a(num)
     (num * num).to_s.include?('3')
   end
 

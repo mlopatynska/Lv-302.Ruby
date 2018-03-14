@@ -4,7 +4,7 @@ include Abramov
 
 class TestAbramov < Minitest::Test
 	def test_task_88a
-		assert_equal(true, task_88_a(6))
+		assert_equal(true, task_88a(6))
 	end
 
 	def test_task_322
