@@ -1,14 +1,14 @@
 require 'minitest/autorun'
-require 'abramov'
+require './abramov'
 include Abramov
 
 class TestAbramov < Minitest::Test
-	def test_task_178_b
-		assert_equal(3, task_178_b(1, 10))
+	def test_task_178b
+		assert_equal(3, task_178b(1, 10))
 	end
 
-  def test_task_178_v
-    assert_equal(3, task_178_v(1, 36))
+  def test_task_178v
+    assert_equal(3, task_178v(1, 36))
   end
 
   def test_task_554
