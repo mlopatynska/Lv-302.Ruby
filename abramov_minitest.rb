@@ -3,9 +3,9 @@ require './abramov'
 
 class TestPerson < Minitest::Test
   include Abramov
-
+  
   def test_task_89a_return_an_answer
-    assert_equal(3, task_89a(15,6))
+    assert_equal(3, task_89a(15, 6))
   end
 
   def test_task_108_return_an_answer
