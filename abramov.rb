@@ -33,17 +33,15 @@ module Abramov
     (2..n).each do |num|
       arr << num if simple?(num)
     end
-    divider(n) & arr
+    arr & divider(n)
   end
 
 # 561. Дано натуральне число n. Серед чисел 1, ..., n найти всі
 # такі, запис котрих співпадає з останніми цифрами запису їх
 # квадрата (наприклад, 6 2 = 36, 25 2 = 625 и т. д.).
   def task_561(n)
-    arr = []
-    (1..n).each do |a|
-      arr << a if square?(a)
+    (1..n).inject([]) do |arr, a|
+      square?(a) ? arr << a : arr
     end
-    arr
   end
 end
