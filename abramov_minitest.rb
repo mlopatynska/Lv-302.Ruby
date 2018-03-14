@@ -6,7 +6,7 @@ class TestClass < Minitest::Test
   def test_task_224
     assert_instance_of(Array, task_224(16))
     assert(task_224(16) == [1, 2, 4, 8, 16])
-    assert(task_224(16) != [3, 5, 8])
+    assert(task_224(17) != [3, 5, 8])
     assert(task_224(21.2) == [])
     assert_equal(task_224(-10), [])
   end
