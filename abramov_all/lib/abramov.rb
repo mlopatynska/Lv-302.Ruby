@@ -13,9 +13,8 @@ module Abramov
   # Найти натуральное число от 1 до 10 000
   # с максимальной суммой делителей
   def task_322(num)
-    hash = {}
-    (2...num).each { |num1| hash[num1.to_s] = val_sum(num1) }
-    hash.key(hash.values.max).to_i
+    sum_hash = (1..num).inject({}) { |sum, x| sum[x] = val_sum(x); sum }
+    sum_hash.key(sum_hash.values.max)
   end
   
   # Натуральное число называется совершенным, если оно равно сумме всех своих делителей,
