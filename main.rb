@@ -7,7 +7,6 @@ class InterfaceAbramov
   include Abramov
   include Helper
 
-  attr_accessor :task_number
   @@problems = YAML.safe_load(File.open(File
     .join(File.dirname(__FILE__), 'problems.yaml')))
   def initialize

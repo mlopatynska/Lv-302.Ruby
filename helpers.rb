@@ -1,10 +1,5 @@
+# helper for abramov560
 module Helper
-  # checking natural number
-  def natural?(num)
-    num.is_a?(Integer) && (num > 0) ? true : false
-  end
-
-  # helper for abramov560
   def sum_of_div(number)
     (1..number / 2).find_all { |num| (number % num).zero? }.inject(:+)
   end

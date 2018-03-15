@@ -2,7 +2,7 @@
 module Abramov
   def task_87(n_num, m_num)
     array = n_num.to_s.split('')
-    array.slice(- m_num, m_num).inject(0) { |sum, digit| sum + digit.to_i }
+    array.slice(-m_num, m_num).inject(0) { |sum, digit| sum + digit.to_i }
   end
 
   def task_182(number)
