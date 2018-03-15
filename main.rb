@@ -7,8 +7,8 @@ class InterfaceAbramov
   include Helper
 
   attr_accessor :task_number
-  @@problems = YAML.load(File.open(File.join(File.dirname(__FILE__), 'problems.yaml')))
   def initialize
+    @problems = YAML.load(File.open(File.join(File.dirname(__FILE__), 'problems.yaml')))
     greeting
     show_task_description
     get_parameters
@@ -19,13 +19,13 @@ class InterfaceAbramov
     user_name = gets.chomp
     puts "Hello #{user_name.capitalize}, It's interface for Abramov's tasks", ''
     print "We have those tasks: "
-    @@problems.each_key {|key| print key, ", "}
+    @problems.each_key {|key| print key, ", "}
   end
 
   def get_task_number
     puts "\nPlease enter task number"
     @input_task_number = gets.chomp
-    if @@problems.keys.include?(@input_task_number) 
+    if @problems.keys.include?(@input_task_number) 
       @input_task_number
     else
       puts "You have entered wrong number"
@@ -34,7 +34,7 @@ class InterfaceAbramov
   end
 
   def show_task_description
-    puts  @@problems[get_task_number]
+    puts  @problems[get_task_number]
   end
 
   def get_parameters
