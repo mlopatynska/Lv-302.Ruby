@@ -59,7 +59,7 @@ module Abramov
   end
 
   def task_554(num)
-    (1..num).to_a.repeated_combination(3).inject([]) do |result, elem|
+    (1..num).to_a.combination(3).inject([]) do |result, elem|
       elem[0]**2 + elem[1]**2 == elem[2]**2 ? result << elem : result
     end
   end
