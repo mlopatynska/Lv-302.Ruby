@@ -11,9 +11,9 @@ class TestClass < Minitest::Test
     assert_equal(task_224(-10), [])
   end
 
-  def test_task_325    
+  def test_task_325
     assert_instance_of(Array, task_325(17))
-    assert(task_325(20) == [2,5])
+    assert(task_325(20) == [2, 5])
     assert(task_325(20) != [3, 5, 8])
     assert(task_325(11.7) == [])
     assert_equal(task_325(-4), [])
