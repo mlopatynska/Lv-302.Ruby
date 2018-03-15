@@ -19,3 +19,7 @@ module Abramov
     (2..num).inject([]) { |result, number| ((2...number).map { |x| number % x }).include?(0) ? result : result << number }
   end
 end
+
+include Abramov
+p task_86b(183)
+p deviders(16)
