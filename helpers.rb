@@ -24,9 +24,11 @@ module Helper
   end
 
   def input_check(func, entered_values)
-  unless arg_count(func) == entered_values.count
-    puts "You have entered wrong number of arguments, please try again"
-    false
+    if arg_count(func) == entered_values.count
+      true
+    else
+      puts "You have entered wrong number of arguments, please try again"
+      false
     end
   end
 
@@ -40,7 +42,7 @@ module Helper
   end
 
   def natural_check(arr)
-    arr.inject(true){ |pass, value| pass && natural?(value.to_i) }
+    arr.inject(true){ |pass, value| pass && natural?(value) }
   end
 
   def armstrong?(num)
