@@ -8,8 +8,7 @@ class InterfaceAbramov
   include Helper
 
   def initialize
-    @problems = YAML.safe_load(File.open(File
-    .join(File.dirname(__FILE__), 'problems.yaml')))
+    @problems = YAML.safe_load(File.open'problems.yaml')
     greeting
     show_task_description
     take_parameters
