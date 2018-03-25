@@ -1,6 +1,6 @@
-require_relative 'abramov'
+require './abramov'
 require 'yaml'
-require_relative 'helpers'
+require './helpers'
 
 # interface for abramov
 class InterfaceAbramov
@@ -8,7 +8,7 @@ class InterfaceAbramov
   include Helper
 
   def initialize
-    @problems = YAML.safe_load(File.open'problems.yaml')
+    @problems = YAML.safe_load(File.open 'problems.yaml')
     greeting
     show_task_description
     take_parameters
