@@ -1,3 +1,0 @@
-module InputCheck
-  
-end

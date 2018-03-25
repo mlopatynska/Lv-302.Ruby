@@ -1,0 +1,31 @@
+<h2 class="text-center">Show user info</h2>
+
+<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4">
+  <table class="table table-striped table-hover table-bordered">
+    <tr>
+      <td>ID:</td>
+      <td><%= @user.id %></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><%= @user.name %></td>
+    </tr>
+    <tr>
+      <td>Surname:</td>
+      <td><%= @user.surname %></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><%= @user.email %></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td><%= @user.gender %></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><%= @user.age %></td>
+    </tr> 
+  </table>
+  <%= link_to "Back", :back, class: "btn my-btn" %>
+</div>
