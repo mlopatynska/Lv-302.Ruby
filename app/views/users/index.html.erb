@@ -1,0 +1,27 @@
+
+<h1>All Users</h1>  
+
+  <table class="table table-hover" >
+    <thead class="bold">
+    <tr>
+      <td>Name</td>
+      <td>Surname</td>
+      <td>Email</td>
+      <td>Age</td>
+      <td>Gender</td>
+    </tr>
+    </thead>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.surname %></td>
+      <td><%= user.email %></td>
+      <td><%= user.age %></td>
+      <td><%= user.gender %></td>
+      <td><button type="button" class="btn btn-default"><%= link_to 'Show', user_path(user) %></button></td>
+      <td><button type="button" class="btn"><%= link_to 'Edit', edit_user_path(user) %></button></td>
+    </tr>
+    <% end %>
+  </table>
+
+
